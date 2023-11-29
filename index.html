@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forside</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="Forside til nettsiden">
+        <meta name="keywords" content="Eksamen, forside">
+        <meta name="author" content="Jakub Wator">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    </head>
+    <body>
+        <div id="grid.container">
+            <header>
+                <a href="index.html">
+                    <img class="logo" alt="gaming" src="img/logo1.png" height="100" width="100" aria-label="logo"> 
+                </a>
+                <nav>
+                    <a href="index.html" class="active" aria-label="Gå til forsiden">Home</a>
+                    <a href="products.html" aria-label="Gå til portfolio">Portfolio</a>
+                    <a href="about.html"  aria-label="Gå til about">About</a>
+                    <a href="about.html#contacty" id="contact" aria-label="kontakt oss">Contact</a>
+                </nav>   
+                <button id="scroll-to-top-btn" class="fa-solid fa-arrow-up" aria-label="gå til topp" onclick="scrollToTop()"></button>
+                <script>
+                    function scrollToTop() {
+                    document.body.scrollTop = 0; 
+                    document.documentElement.scrollTop = 0; 
+                    }
+                
+                    window.onscroll = function() {
+                    scrollFunction();
+                    };
+
+                    function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("scroll-to-top-btn").style.display = "block";
+                    } else {
+                        document.getElementById("scroll-to-top-btn").style.display = "none";
+                    }
+                    }
+                </script>
+            </header>
+                <main>
+                    <div class="headline">
+                        <section id="video" aria-label="video">
+                            <video id="video-background" autoplay muted loop aria-label="video i bakgrunn">
+                                <!--Pynt -->
+                                <source src="img/mountains.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </section>
+                        <section id="video2">
+                            <img id="video3" alt="bakgrunn bilde" src="img/porfolio.jpg"></img>
+                        </section>
+                        <section id="content" aria-label="content">
+                            <h1>Compeling headline</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <a href="index.html#services" id="Read">Read more about our services</a>
+                        </section>
+                    </div>
+                    <section class="engaging" aria-label="vivvende">
+                        <h2>Engaging subheading. What can you help your visitors with</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+                    </section>
+                    <section class="company" aria-label="bedrift">
+                        <img class=company3 tabindex="0" width="400" height="400" src="https://placehold.co/400x400" alt="Place Holder" aria-label="bilde av produktet">
+                        <!-- Innhold -->
+                            <article class="company2">
+                                <h2>About our company</h2>
+                                <p class="g">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <a href="about.html" id="More">Read more about us </a>
+                            </article>
+                    </section>
+                    <section id="services" aria-label="services">
+                        <article class="our">
+                            <h2 class="h">Our services</h2>
+                        </article>
+                            <article class=" branding">
+                            <article class = branding1>
+                                <i class="fa-solid fa-person" aria-label="person ikon"></i>
+                                <h3 class="f">Branding</h3>
+                                <h4 class="e">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                            </article>
+                            <article class = branding2>
+                                <i class="fa-solid fa-cloud" aria-label="sky ikon"></i>
+                                <h3 class="f">Design</h3>
+                                <h4 class="e">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                            </article>
+                            <article class = branding3>
+                                <i class="fa-solid fa-code" aria-label="kode ikon"></i>
+                                <h3 class="f">Development</h3>
+                                <h4 class="e">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                            </article>
+                            <article class = branding4>
+                                <i class="fa-solid fa-phone" aria-label="mobil ikon"></i>
+                                <h3 class="f">Support</h3>
+                                <h4 class="e">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                            </article>
+                        </article>
+                    </section>
+                    <section id="newsletter" aria-label="newsletter">
+                        <article class="sign">
+                            <h2 class="w">Sign up for our newsletter</h2>
+                        </article>
+                        <article class="newsletter-form">
+                            <input type="email" id="email-input" placeholder="Your email" aria-label="din epost">
+                            <button id="signup-button" aria-label="skriv meg opp">Sign me up!</button>
+                        </article>
+                    </section>
+                </main>
+            <footer>
+                <article id="logo2">
+                    <img src="img/logo1.png" alt="Logo" height="80" width="80" aria-label="logo">
+                </article>
+                <article id="footer-text">
+                    <p class="z">Company rights Company name 2023</p>
+                </article>
+                <article id="icons">
+                    <a href="https://nb-no.facebook.com/"><i class="fa-brands fa-square-facebook" aria-label="link til facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" aria-label="link til instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-label="link til linkedin"></i></a>
+                </article>
+            </footer>
+        </div>
+    </body>
+</html>

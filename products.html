@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="portfolio til nettsiden">
+        <meta name="keywords" content="Eksamen, forside">
+        <meta name="author" content="Jakub Wator">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    </head>
+    <body>
+        <div id="grid.container">
+            <header>
+                <a href="index.html">
+                    <img class="logo" alt="gaming" src="img/logo1.png" height="100" width="100"> 
+                </a>
+                <nav>
+                    <a href="index.html" aria-label="Gå til forsiden">Home</a>
+                    <a href="products.html" class="active" aria-label="Gå til portfolio">Portfolio</a>
+                    <a href="about.html"  aria-label="Gå til about">About</a>
+                    <a href="about.html#contacty" id="contact" aria-label="kontakt oss">Contact</a>
+                    <button id="scroll-to-top-btn" class="fa-solid fa-arrow-up" aria-label="gå til topp" onclick="scrollToTop()"></button>
+                    <script>
+                        function scrollToTop() {
+                        document.body.scrollTop = 0; 
+                        document.documentElement.scrollTop = 0; 
+                        }
+                    
+                        window.onscroll = function() {
+                        scrollFunction();
+                        };
+                    
+                        function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                            document.getElementById("scroll-to-top-btn").style.display = "block";
+                        } else {
+                            document.getElementById("scroll-to-top-btn").style.display = "none";
+                        }
+                        }
+                    </script>
+                </nav>
+            </header>
+            <main>
+                <section id="porfoliopic" aria-label="porfolio seksjon">
+                    <img id="pcbilde" src="img/porfolio.jpg" width="1200" height="460" alt="bilde av pc">
+                    <!-- Pynt -->
+                    <section id="content">
+                        <h1>Portfolio</h1>
+                    </section>
+                </section>
+                <section id="previous" aria-label="forrige">
+                    <h2 id=u>Explore previous jobs</h2>
+                    <hr>
+                    <article id="previous1">
+                        <a href="products.html#brandingsec2" id="brandingbtn" aria-label="branding knapp">Branding</a>
+                        <a href="products.html#designsec2" id="designbtn" aria-label="design knapp">Design</a>
+                        <a href="products.html#developmentsec2"  id="developmentbtn" aria-label="development knapp">Development</a>
+                     
+                    </article>
+                </section>
+                <section id="brandingsec2" aria-label="branding seksjon">
+                    <h2 id="u1">Branding</h2>
+                    <hr>
+                </section>
+                <section id="brandingsec">
+                    <article class="brandingsec1">
+                        <img tabindex="0" width="379" height="379" src="https://placehold.co/400x400" alt="Place Holder" class="zoom-image" aria-label="bilde av produktet">
+                        <!-- Innhold -->
+                        <h3 class="i">et harum quidem</h3>
+                    </article>
+                    <article class="brandingsec1">
+                        <img tabindex="0" width="379" height="379" src="https://placehold.co/400x400" alt="Place Holder" class="zoom-image" aria-label="bilde av produktet">
+                        <!-- Innhold -->
+                        <h3 class="i">et harum quidem</h3>
+                    </article>
+                    <article class="brandingsec1">
+                        <img tabindex="0" width="379" height="379" src="https://placehold.co/400x400" alt="Place Holder" class="zoom-image" aria-label="bilde av produktet">
+                        <!-- Innhold -->
+                        <h3 class="i">et harum quidem</h3>
+                    </article>
+                    <article class="brandingsec1">
+                        <img tabindex="0" width="500" height="500" src="https://placehold.co/400x400" alt="Place Holder" class="zoom-image" aria-label="bilde av produktet">
+                        <!-- Innhold -->
+                        <h3 class="i">et harum quidem</h3>
+                    </article>
+                </section>
+                <section id="designsec2" aria-label="design sekjson">
+                    <h2 class="u1">Design</h2>
+                    <hr>
+                </section>
+                <section id="designsec">
+                    <article class="designsec1">
+                        <img tabindex="0" width="379" height="379" src="https://placehold.co/400x400" alt="Place Holder" class="zoom-image" aria-label="bilde av produktet">
+                        <!-- Innhold -->
+                        <h3 class="i">et harum quidem</h3>
+                    </article>
+                    <article class="designsec1">
+                        <img tabindex="0" width="379" height="379" src="https://placehold.co/400x400" alt="Place Holder" class="zoom-image" aria-label="bilde av produktet">
+                        <!-- Innhold -->
+                        <h3 class="i">et harum quidem</h3>
+                    </article>
+                    <article class="designsec1">
+                        <img tabindex="0" width="379" height="379" src="https://placehold.co/400x400" alt="Place Holder" class="zoom-image" aria-label="bilde av produktet">
+                        <!-- Innhold -->
+                        <h3 class="i">et harum quidem</h3>
+                    </article>
+                </section>
+                   <section id="developmentsec2" aria-label="development seksjon">
+                    <h2 class="u1">Development</h2>
+                    <hr>
+                </section>
+                <section id="developmentsec">
+                    <article class="developmentsec1">
+                        <img tabindex="0" width="584" height="584" src="https://placehold.co/400x400" alt="Place Holder" class="zoom-image" aria-label="bilde av produktet">
+                        <!-- Innhold -->
+                        <h3 class="i">et harum quidem</h3>
+                    </article>
+                    <article class="developmentsec1">
+                        <img tabindex="0" width="584" height="584" src="https://placehold.co/400x400" alt="Place Holder" class="zoom-image" aria-label="bilde av produktet">
+                        <!-- Innhold -->
+                        <h3 class="i">et harum quidem</h3>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <article id="logo22">
+                    <img src="img/logo1.png" alt="Logo" height="80" width="80" aria-label="logo">
+                </article>
+                <article id="footer-text2">
+                    <p class="z">Company rights Company name 2023</p>
+                </article>
+                <article id="icons2">
+                    <a href="https://nb-no.facebook.com/"><i class="fa-brands fa-square-facebook" aria-label="link til facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" aria-label="link til instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-label="link til linkedin"></i></a>
+                </article>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="about side til nettsiden">
+        <meta name="keywords" content="Eksamen, forside">
+        <meta name="author" content="Jakub Wator">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    </head>
+    <body>
+        <div id="grid.container">
+            <header>
+                <a href="index.html">
+                    <img class="logo" alt="gaming" src="img/logo1.png" height="100" width="100"> 
+                </a>
+                <nav>
+                    <a href="index.html" aria-label="Gå til forsiden">Home</a>
+                    <a href="products.html" aria-label="Gå til portfolio">Portfolio</a>
+                    <a href="about.html" class="active" aria-label="Gå til about">About</a>
+                    <a href="about.html#contacty" id="contact" aria-label="kontakt oss">Contact</a>
+                    <button id="scroll-to-top-btn" class="fa-solid fa-arrow-up" aria-label="gå til topp knapp" onclick="scrollToTop()"></button>
+                    <script>
+                        function scrollToTop() {
+                        document.body.scrollTop = 0; 
+                        document.documentElement.scrollTop = 0; 
+                        }
+                    
+                        window.onscroll = function() {
+                        scrollFunction();
+                        };
+                    
+                        function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                            document.getElementById("scroll-to-top-btn").style.display = "block";
+                        } else {
+                            document.getElementById("scroll-to-top-btn").style.display = "none";
+                        }
+                        }
+                    </script>
+                </nav>
+            </header>
+            <main>
+                <section id="porfoliopic" aria-label="porfolio section">
+                <img id="pcbilde2" src="img/porfolio.jpg" width="1200" height="400" alt="bilde av pc" aria-label="bakgrunns bilde">
+                <!-- Pynt -->
+                <article id="content2">
+                    <h1 id="m">About our company</h1>
+                    <p class="g">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <a href="about.html#contacty" id="touch" aria-label="kontakt oss">Get in touch with us</a>
+                </article>
+            </section>
+            <section id="services" aria-label="services seksjonen">
+                <article class="our">
+                    <h2 class="h">Our services</h2>
+                </article>
+                    <article class=" branding">
+                    <article class = branding1>
+                        <i class="fa-solid fa-person" aria-label="person ikon"></i>
+                        <h3 class="f">Branding</h3>
+                        <h4 class="e">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    </article>
+                    <article class = branding2>
+                        <i class="fa-solid fa-cloud" aria-label="sky ikon"></i>
+                        <h3 class="f">Design</h3>
+                        <h4 class="e">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    </article>
+                    <article class = branding3>
+                        <i class="fa-solid fa-code" aria-label="kode ikon"></i>
+                        <h3 class="f">Development</h3>
+                        <h4 class="e">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    </article>
+                    <article class = branding4>
+                        <i class="fa-solid fa-phone" aria-label="mobil ikon"></i>
+                        <h3 class="f">Support</h3>
+                        <h4 class="e">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    </article>
+                </article>
+            </section>
+            <section id="clients" aria-label="clients seksjonen">
+                <article class="some">
+                    <h2 class="c">Some of our clients</h2>
+                </article>
+                <article class="clients1">
+                    <img class="logo4" src="img/logo1.png" alt="Logo" height="200" width="200" aria-label="logo til bedriften">
+                    <img class="logo4" src="img/logo2.png" alt="Logo" height="200" width="200" aria-label="logo til bedriften">
+                    <img class="logo4" src="img/logo3.png" alt="Logo" height="200" width="200" aria-label="logo til bedriften">
+                </article>
+                </section>
+                <section id="contacty" aria-label="contact seksjonen">
+                    <article class="us">
+                    <h2 class="y">Contact us</h2>
+                    </article>
+                    <section class="contact1">
+                        <form>
+                            <h3 class="v">Send us a message</h3>
+                            <h3>Name</h3>
+                            <label for="textbox"></label>
+                            <input type="text" required="required" id="textbox" placeholder="Ola Nordmann..." aria-label="ditt navn">
+                            <h3>Subject</h3>
+                            <label for="textbox"></label>
+                            <input type="text" required="required" placeholder="Branding..." aria-label="branding">
+                            <h3>Message</h3>
+                            <input type="text" required="required" id="textbox2" aria-label="skriv melding">
+                            <button class="message" type="button" aria-label="send melding">Send message</button>
+                        </form>
+                        <article class="contact2">
+                            <h3 class="v">Contact information</h3>
+                            <p >"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <article class="contact3">
+                            <span class="tekst1"><i class="fa-solid fa-location-pin" aria-label="pin ikon"></i></span>
+                            <p title="Adress" class="griditem" aria-label="adressen vår">B R A Veien 4, 1757 Halden</p>
+                            <span class="fa-solid fa-phone-volume" aria-label="mobil ikon"></span>
+                            <p  title="Phone number" aria-label="nummeret våres" class="griditem">69 60 80 00</p>
+                            <span class="tekst1"><i class="fa-solid fa-envelope" aria-label="konvulutt ikon"></i></span>
+                            <p  title="Email" aria-label="E-posten vår" class="griditem">postmottak@hiof.no</p>
+                            </article>
+                        </article>
+                    </section>
+                </section>
+                <section id="map" aria-label="map">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8188.751438756169!2d11.334349456286832!3d59.129257201327654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1701097977172!5m2!1sno!2sno"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </main>
+            <footer>
+                <article id="logo22">
+                    <img src="img/logo1.png" alt="Logo" height="80" width="80" aria-label="logo">
+                </article>
+                <article id="footer-text2">
+                    <p class="z">Company rights Company name 2023</p>
+                </article>
+                <article id="icons2">
+                    <a href="https://nb-no.facebook.com/"><i class="fa-brands fa-square-facebook" aria-label="link til facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" aria-label="link til instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-label="link til linkedin"></i></a>
+                </article>
+        </footer>
+        </div>
+    </body>
+</html>
